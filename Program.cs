@@ -39,9 +39,9 @@ void WriteArray (int[,] array)
     for (int j = 0; j < array.GetLength(1); j++)
     {
       if (array[i,j] / 10 <= 0)
-      Console.Write($" {array[i,j]} ");
+      Console.Write($"{array[i,j]:d2} ");
 
-      else Console.Write($"{array[i,j]} ");
+      else Console.Write($"{array[i,j]:d2} ");
     }
     Console.WriteLine();
   }
